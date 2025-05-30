@@ -1,5 +1,5 @@
 import cv2
-import numpy as np
+import numpy as np # type: ignore
 from mss import mss
 import time
 
@@ -87,7 +87,7 @@ def record_screen(output_filename="my_screen_record.avi", fps=20.0, duration=Non
 if __name__ == "__main__":
     # Example usage: Record the entire primary screen for 10 seconds at 20 FPS
     # IMPORTANT CHANGE HERE: Output filename changed to .avi
-    record_screen(output_filename="my_first_screen_record.avi", fps=20, duration=10)
+    record_screen(output_filename="my_first_screen_record.avi", fps=20, duration=60)
 
     # Example of capturing a specific region (uncomment to use)
     # capture_area = {'top': 100, 'left': 100, 'width': 640, 'height': 480}
